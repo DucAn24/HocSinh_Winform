@@ -1,0 +1,12 @@
+E:\winForm\thucHanh\bin\Debug\thucHanh.exe.config
+E:\winForm\thucHanh\bin\Debug\thucHanh.exe
+E:\winForm\thucHanh\bin\Debug\thucHanh.pdb
+E:\winForm\thucHanh\bin\Debug\System.Data.SqlClient.dll
+E:\winForm\thucHanh\obj\Debug\thucHanh.csproj.AssemblyReference.cache
+E:\winForm\thucHanh\obj\Debug\thucHanh.Form1.resources
+E:\winForm\thucHanh\obj\Debug\thucHanh.Properties.Resources.resources
+E:\winForm\thucHanh\obj\Debug\thucHanh.csproj.GenerateResource.cache
+E:\winForm\thucHanh\obj\Debug\thucHanh.csproj.CoreCompileInputs.cache
+E:\winForm\thucHanh\obj\Debug\thucHanh.exe
+E:\winForm\thucHanh\obj\Debug\thucHanh.pdb
+E:\winForm\thucHanh\obj\Debug\thucHanh.csproj.Up2Date
