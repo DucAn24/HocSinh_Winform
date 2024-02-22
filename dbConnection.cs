@@ -11,6 +11,7 @@ namespace thucHanh
 {
     internal class dbConnection
     {
+
         
         public void DataConnect(string sqlStr, DataGridView dtg)
         {

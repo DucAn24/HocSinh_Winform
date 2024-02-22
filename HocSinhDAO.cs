@@ -11,7 +11,6 @@ namespace thucHanh
 {
     internal class HocSinhDAO
     {
-        //SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
 
 
         public void Add(HocSinh hocSinh)

@@ -26,28 +26,28 @@ namespace thucHanh
         public HocSinh() { }
 
         // Getter and setter for name
-        public string Name
+        public string getName
         {
             get { return name; }
             set { name = value; }
         }
 
         // Getter and setter for address
-        public string Address
+        public string getAddress
         {
             get { return address; }
             set { address = value; }
         }
 
         // Getter and setter for cmnd
-        public string Cmnd
+        public string getCmnd
         {
             get { return cmnd; }
             set { cmnd = value; }
         }
 
         // Getter and setter for birth
-        public string Birth
+        public string getBirth
         {
             get { return birth; }
             set { birth = value; }
