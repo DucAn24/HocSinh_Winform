@@ -39,25 +39,13 @@ namespace thucHanh
 
             dbConnection connect = new dbConnection();
             connect.DataConnect(sqlStr, gvHocSinh);
-/*            try
-            {
-                conn.Open();
+        }
 
-                string sqlStr = "SELECT * FROM HocSinh";
-
-                SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
-                DataTable dtSinhVien = new DataTable();
-                adapter.Fill(dtSinhVien);
-                gvHocSinh.DataSource = dtSinhVien; /// gvHsinh = name cua data gridview
-            }
-            catch (Exception exc)
-            {
-                MessageBox.Show(exc.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }*/
+        private void RefreshData()
+        {
+            string sqlStr = "SELECT * FROM HocSinh";
+            dbConnection connect = new dbConnection();
+            connect.DataConnect(sqlStr, gvHocSinh);
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -65,14 +53,12 @@ namespace thucHanh
                HocSinh hocSinh = new HocSinh(txtHoTen.Text, txtDiaChi.Text, txtCMND.Text, dtpNgaySinh.Text );
                HocSinhDAO dao = new HocSinhDAO();
                dao.Add(hocSinh);
+
+               RefreshData();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            /*            HocSinh hocSinh = new HocSinh(txtHoTen.Text, txtDiaChi.Text, txtCMND.Text, dtpNgaySinh.Text);
-                        HocSinhDAO dao = new HocSinhDAO();
-                        dao.Modify(hocSinh);*/
-
             // Parse the date string to DateTime
             if (DateTime.TryParse(dtpNgaySinh.Text, out DateTime ngaySinh))
             {
@@ -91,6 +77,8 @@ namespace thucHanh
                 MessageBox.Show("Invalid date format for NgaySinh");
             }
 
+            RefreshData();
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -98,6 +86,8 @@ namespace thucHanh
             HocSinh hocSinh = new HocSinh(txtHoTen.Text, txtDiaChi.Text, txtCMND.Text, dtpNgaySinh.Text);
             HocSinhDAO dao = new HocSinhDAO();
             dao.Delete(hocSinh);
+
+            RefreshData();
         }
 
         private void gv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
