@@ -50,7 +50,7 @@ namespace thucHanh
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-               HocSinh hocSinh = new HocSinh(txtHoTen.Text, txtDiaChi.Text, txtCMND.Text, dtpNgaySinh.Text );
+               HocSinh hocSinh = new HocSinh(txtHoTen.Text, txtDiaChi.Text, txtCMND.Text, dtpNgaySinh.Value);
                HocSinhDAO dao = new HocSinhDAO();
                dao.Add(hocSinh);
 
@@ -59,31 +59,16 @@ namespace thucHanh
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            // Parse the date string to DateTime
-            if (DateTime.TryParse(dtpNgaySinh.Text, out DateTime ngaySinh))
-            {
-                // Convert DateTime to string with a specific format
-                string ngaySinhString = ngaySinh.ToString("yyyy-MM-dd"); // Adjust the format as needed
-
-                // Create HocSinh object with the formatted date string
-                HocSinh hocSinh = new HocSinh(txtHoTen.Text, txtDiaChi.Text, txtCMND.Text, ngaySinhString);
-
-                // Assuming HocSinhDAO.Modify method accepts a HocSinh object
-                HocSinhDAO dao = new HocSinhDAO();
-                dao.Modify(hocSinh);
-            }
-            else
-            {
-                MessageBox.Show("Invalid date format for NgaySinh");
-            }
+            HocSinh hocSinh = new HocSinh(txtHoTen.Text, txtDiaChi.Text, txtCMND.Text, dtpNgaySinh.Value);
+            HocSinhDAO dao = new HocSinhDAO();
+            dao.Modify(hocSinh);
 
             RefreshData();
-
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            HocSinh hocSinh = new HocSinh(txtHoTen.Text, txtDiaChi.Text, txtCMND.Text, dtpNgaySinh.Text);
+            HocSinh hocSinh = new HocSinh(txtHoTen.Text, txtDiaChi.Text, txtCMND.Text, dtpNgaySinh.Value);
             HocSinhDAO dao = new HocSinhDAO();
             dao.Delete(hocSinh);
 

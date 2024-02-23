@@ -12,10 +12,9 @@ namespace thucHanh
     internal class HocSinhDAO
     {
 
-
         public void Add(HocSinh hocSinh)
         {
-            string sqlStr = string.Format("INSERT INTO HocSinh(Ten, Diachi, Cmnd, NgayThangNam) VALUES ('{0}', '{1}', '{2}', GETDATE())", hocSinh.getName, hocSinh.getAddress, hocSinh.getCmnd, hocSinh.getBirth);
+            string sqlStr = string.Format("INSERT INTO HocSinh(Ten, Diachi, Cmnd, NgayThangNam) VALUES ('{0}', '{1}', '{2}', GETDATE())", hocSinh.getHoTen, hocSinh.getDiaChi, hocSinh.getCmnd, hocSinh.getNgaySinh);
             dbConnection db = new dbConnection();
             db.Execute(sqlStr);
         }
@@ -23,7 +22,7 @@ namespace thucHanh
         public void Modify(HocSinh hocSinh)
         {
 
-            string sqlStr = string.Format("UPDATE HocSinh SET Ten = '{0}', DiaChi = '{1}', NgayThangNam = '{2}'  WHERE CMND = '{3}' ", hocSinh.getName, hocSinh.getAddress, hocSinh.getBirth, hocSinh.getCmnd);
+            string sqlStr = string.Format("UPDATE HocSinh SET Ten = '{0}', DiaChi = '{1}', NgayThangNam = '{2}'  WHERE CMND = '{3}' ", hocSinh.getHoTen, hocSinh.getDiaChi, hocSinh.getNgaySinh, hocSinh.getCmnd);
             dbConnection db = new dbConnection();
             db.Execute(sqlStr);
         }
@@ -34,7 +33,6 @@ namespace thucHanh
             dbConnection db = new dbConnection();
             db.Execute(sqlStr);
         }
-
 
 
     }

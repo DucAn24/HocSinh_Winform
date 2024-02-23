@@ -12,7 +12,6 @@ namespace thucHanh
     internal class dbConnection
     {
 
-        
         public void DataConnect(string sqlStr, DataGridView dtg)
         {
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);

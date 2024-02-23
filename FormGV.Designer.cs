@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.uc1 = new thucHanh.UserControl1();
+            this.SuspendLayout();
+            // 
+            // uc1
+            // 
+            this.uc1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.uc1.Location = new System.Drawing.Point(12, 1);
+            this.uc1.Name = "uc1";
+            this.uc1.Size = new System.Drawing.Size(918, 510);
+            this.uc1.TabIndex = 0;
+            this.uc1.Load += new System.EventHandler(this.userControl11_Load_1);
+            // 
+            // FormGV
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(942, 523);
+            this.Controls.Add(this.uc1);
+            this.Name = "FormGV";
             this.Text = "FormGV";
+            this.Load += new System.EventHandler(this.FormGV_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        public UserControl1 uc1;
     }
 }

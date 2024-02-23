@@ -10,3 +10,5 @@ E:\winForm\thucHanh\obj\Debug\thucHanh.csproj.CoreCompileInputs.cache
 E:\winForm\thucHanh\obj\Debug\thucHanh.exe
 E:\winForm\thucHanh\obj\Debug\thucHanh.pdb
 E:\winForm\thucHanh\obj\Debug\thucHanh.csproj.Up2Date
+E:\winForm\thucHanh\obj\Debug\thucHanh.UserControl1.resources
+E:\winForm\thucHanh\obj\Debug\thucHanh.FormGV.resources
