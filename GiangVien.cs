@@ -8,7 +8,7 @@ namespace thucHanh
 {
     internal class GiangVien: People
     {
-        public GiangVien(String ten, String diachi, String cmnd, DateTime ngaysinh) : base(ten, diachi, cmnd, ngaysinh)
+        public GiangVien(int id, string hoTen, string gioiTinh, string diaChi, string cmnd, DateTime ngaySinh, string phone, string email) : base(id, hoTen, gioiTinh, diaChi, cmnd, ngaySinh, phone, email)
         {
 
         }

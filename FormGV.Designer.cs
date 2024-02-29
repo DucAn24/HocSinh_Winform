@@ -34,9 +34,9 @@
             // uc1
             // 
             this.uc1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.uc1.Location = new System.Drawing.Point(12, 1);
+            this.uc1.Location = new System.Drawing.Point(-28, 1);
             this.uc1.Name = "uc1";
-            this.uc1.Size = new System.Drawing.Size(918, 510);
+            this.uc1.Size = new System.Drawing.Size(1274, 545);
             this.uc1.TabIndex = 0;
             this.uc1.Load += new System.EventHandler(this.userControl11_Load_1);
             // 
@@ -44,7 +44,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 523);
+            this.ClientSize = new System.Drawing.Size(1258, 573);
             this.Controls.Add(this.uc1);
             this.Name = "FormGV";
             this.Text = "FormGV";

@@ -1,9 +1,14 @@
-﻿CREATE TABLE HocSinh (
-    Ten varchar(100),
-    Diachi varchar(255),
-    Cmnd varchar(100),
-    NgayThangNam DATE
+﻿CREATE TABLE Customer (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    ten VARCHAR(255),
+    gioi_tinh VARCHAR(10),
+    dia_chi VARCHAR(255),
+    cmnd VARCHAR(20),
+    ngay_thang_nam_sinh DATE,
+    phone VARCHAR(15),
+    email VARCHAR(255)
 );
+
 
 
 INSERT INTO HocSinh (Ten, Diachi, Cmnd, NgayThangNam)

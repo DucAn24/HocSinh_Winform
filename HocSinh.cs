@@ -8,7 +8,7 @@ namespace thucHanh
 {
     internal class HocSinh:People
     {
-        public HocSinh(String ten, String diaChi, String cmnd, DateTime ngaySinh) : base(ten, diaChi, cmnd, ngaySinh)
+        public HocSinh(int id, string hoTen, string gioiTinh, string diaChi, string cmnd, DateTime ngaySinh, string phone, string email) : base(id, hoTen, gioiTinh, diaChi, cmnd, ngaySinh, phone, email)
         {
 
         }

@@ -61,5 +61,25 @@ namespace thucHanh
         {
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void radNam_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void radNu_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void txtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
